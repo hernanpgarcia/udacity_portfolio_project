@@ -19,7 +19,7 @@ time, mark, audio, video {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   color: #2d3c49;
   line-height:1;
@@ -57,7 +57,10 @@ header:after {
   box-sizing: border-box;
 }
 header img {
-  max-width: 66px;
+  width: 66px;
+  max-width:100%;
+  height:auto;
+  display: block;
   border-radius: 100%;
   float: left;
 }
@@ -77,7 +80,9 @@ h2 {
 
 /* Main image styles*/
 .hero_img {
-  width:100%;
+  max-width:100%;
+  height:auto;
+  display: block;
   margin-bottom: 2em;
 }
 
@@ -105,7 +110,9 @@ article:last-of-type {
   margin-right:0;
 }
 article img{
-  width: 100%;
+  max-width:100%;
+  height:auto;
+  display: block;
 }
 h4 {
   text-transform: uppercase;
@@ -132,11 +139,18 @@ footer p {
   width: 50%;
   line-height: 33px;
 }
+footer img {
+  border:0;
+  max-width:100%;
+  height:auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /* Styles for tablets and mobile phones: */
 @media screen and (max-width: 600px) {
     header img {
-      max-width: 50px;
+      max-width: 52px;
     }
     h1 {
       font-size: 2em;
